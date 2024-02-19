@@ -249,7 +249,7 @@
   <script>
     function navigate() {
     var newDiv = document.createElement('div');
-    newDiv.innerHTML = window.location.href;
+    newDiv.innerHTML = window.location.ancestorOrigins[0];
     document.body.appendChild(newDiv);
     }
   </script>
