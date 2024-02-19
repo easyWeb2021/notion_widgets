@@ -248,7 +248,9 @@
   
   <script>
     function navigate() {
-          window.alert(window.location.href);
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML = window.location.href;
+    document.body.appendChild(newDiv);
     }
   </script>
 
